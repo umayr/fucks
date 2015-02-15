@@ -1,0 +1,29 @@
+{
+  "name": "fuck",
+  "version": "0.0.0",
+  "description": "Keeps track of the number of fucks given while coding anything.",
+  "private": true,
+  "bin": {
+    "fuck": "./bin/fuck"
+  },
+  "scripts": {
+    "test": "mocha -R spec"
+  },
+  "author": {
+    "name": "Umayr Shahid",
+    "email": "umayrr@hotmail.co.uk",
+    "url": "http://umayrshahid.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/umayr/fuck"
+  },
+  "license": "MIT",
+  "bugs": "https://github.com/umayr/fuck/issues",
+  "dependencies": {
+    "autocmdr": "~0.0.4",
+    "commander": "~2.0.0",
+    "jsonfile": "^2.0.0"
+  },
+  "devDependencies": {}
+}

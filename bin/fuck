@@ -1,0 +1,60 @@
+#!/usr/bin/env node
+'use strict';
+
+var program = require('commander');
+var jf = require('jsonfile');
+var constants = require('../utils/constants');
+
+program
+    .version('0.0.0')
+    .option('-r, --reset', 'resets fucks')
+    .option('-c, --count', 'total fucks given')
+    .option('-l, --list', 'lists all fucks given yet');
+
+
+program
+    .on('*', function (name) {
+        console.log('\'' + name + '\' is not a known command. See \'fuck --help\':');
+        program.outputHelp();
+        process.exit(1);
+    });
+
+program
+    .parse(process.argv);
+
+if (program.args.length < 1) {
+
+    var json = jf.readFileSync(constants.file);
+    var fucks = json['fucks'];
+
+    if (program.reset) {
+        jf.writeFileSync(constants.file, JSON.parse(constants.raw));
+        console.log('all fucks have been reset.');
+    }
+
+    if (program.count) {
+        console.log('you have given ' + fucks.length + ' fucks!');
+    }
+
+    if (program.list) {
+        if(fucks.length > 0){
+            console.log('----------------------------------------');
+            console.log('|                 fucks                |');
+            console.log('----------------------------------------');
+
+            for(var i = 0; i < fucks.length; i++){
+                console.log(new Date(fucks[i].time));
+            }
+        }
+
+    }
+
+    if (!program.reset && !program.count && !program.list) {
+
+        fucks.push({time: Date.now()});
+        jf.writeFileSync(constants.file, json);
+
+    }
+
+    process.exit(1);
+}
