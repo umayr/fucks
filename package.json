@@ -1,5 +1,5 @@
 {
-  "name": "fuck",
+  "name": "fucks",
   "version": "0.0.1",
   "description": "Keeps track of the number of fucks given while coding anything.",
   "private": false,
@@ -16,10 +16,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/umayr/fuck"
+    "url": "https://github.com/umayr/fucks"
   },
   "license": "MIT",
-  "bugs": "https://github.com/umayr/fuck/issues",
+  "bugs": "https://github.com/umayr/fucks/issues",
   "dependencies": {
     "commander": "~2.0.0",
     "jsonfile": "^2.0.0"

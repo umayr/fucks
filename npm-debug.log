@@ -12,18 +12,18 @@
 8 silly cache add   rawSpec: '.',
 8 silly cache add   spec: '/Users/umayr/Development/Node/fuck',
 8 silly cache add   type: 'directory' }
-9 verbose addLocalDirectory /Users/umayr/.npm/fuck/0.0.0/package.tgz not in flight; packing
-10 verbose tar pack [ '/Users/umayr/.npm/fuck/0.0.0/package.tgz',
+9 verbose addLocalDirectory /Users/umayr/.npm/fuck/0.0.1/package.tgz not in flight; packing
+10 verbose tar pack [ '/Users/umayr/.npm/fuck/0.0.1/package.tgz',
 10 verbose tar pack   '/Users/umayr/Development/Node/fuck' ]
-11 verbose tarball /Users/umayr/.npm/fuck/0.0.0/package.tgz
+11 verbose tarball /Users/umayr/.npm/fuck/0.0.1/package.tgz
 12 verbose folder /Users/umayr/Development/Node/fuck
-13 info prepublish fuck@0.0.0
-14 verbose addLocalTarball adding from inside cache /Users/umayr/.npm/fuck/0.0.0/package.tgz
-15 silly cache afterAdd fuck@0.0.0
-16 verbose afterAdd /Users/umayr/.npm/fuck/0.0.0/package/package.json not in flight; writing
-17 verbose afterAdd /Users/umayr/.npm/fuck/0.0.0/package/package.json written
+13 info prepublish fuck@0.0.1
+14 verbose addLocalTarball adding from inside cache /Users/umayr/.npm/fuck/0.0.1/package.tgz
+15 silly cache afterAdd fuck@0.0.1
+16 verbose afterAdd /Users/umayr/.npm/fuck/0.0.1/package/package.json not in flight; writing
+17 verbose afterAdd /Users/umayr/.npm/fuck/0.0.1/package/package.json written
 18 silly publish { name: 'fuck',
-18 silly publish   version: '0.0.0',
+18 silly publish   version: '0.0.1',
 18 silly publish   description: 'Keeps track of the number of fucks given while coding anything.',
 18 silly publish   private: false,
 18 silly publish   bin: { fuck: './bin/fuck' },
@@ -39,41 +39,52 @@
 18 silly publish   devDependencies: {},
 18 silly publish   readme: 'Fuck.\n=============\n\n## Description\n\nKeeps track of the number of fucks given while doing... well, anything.\n\n## Usage\n\nTo install fuck from npm, run:\n\n```\n$ npm install -g fuck\n```\n\n```\n$ fuck --help\n\nUsage: fuck [options]\n\n  Options:\n\n    -h, --help     output usage information\n    -V, --version  output the version number\n    -r, --reset    resets fucks\n    -c, --count    total fucks given\n    -l, --list     lists all fucks given yet\n\n```\n\n\n![Fuck example!](http://i.imgur.com/W7ODQjo.png)\n\n\n## License\n\nCopyright (c) 2015 Umayr Shahid\n\n[MIT License](http://en.wikipedia.org/wiki/MIT_License)\n\n',
 18 silly publish   readmeFilename: 'Readme.md',
-18 silly publish   gitHead: '14b7ec978c1eff0628542fb544ddeee58cb442f6',
+18 silly publish   gitHead: 'd113959a5e2a9b67bd938d383ee70e2312c2f6f5',
 18 silly publish   homepage: 'https://github.com/umayr/fuck',
-18 silly publish   _id: 'fuck@0.0.0',
-18 silly publish   _shasum: 'f58398549cd16dc2dd940d43fc41ea57078cec01',
+18 silly publish   _id: 'fuck@0.0.1',
+18 silly publish   _shasum: '5dae435cd723af7a40c7d1b9d7f955e415e92ea3',
 18 silly publish   _from: '.' }
 19 silly mapToRegistry name fuck
 20 silly mapToRegistry using default registry
 21 silly mapToRegistry registry https://registry.npmjs.org/
 22 silly mapToRegistry uri https://registry.npmjs.org/fuck
 23 verbose publish registryBase https://registry.npmjs.org/
-24 silly publish uploading /Users/umayr/.npm/fuck/0.0.0/package.tgz
+24 silly publish uploading /Users/umayr/.npm/fuck/0.0.1/package.tgz
 25 verbose request uri https://registry.npmjs.org/fuck
 26 verbose request sending authorization for write operation
-27 info attempt registry request try #1 at 17:16:39
-28 verbose request id b0d0b0fa8d006d6a
+27 info attempt registry request try #1 at 17:17:49
+28 verbose request id 74b1569627437922
 29 http request PUT https://registry.npmjs.org/fuck
 30 http 403 https://registry.npmjs.org/fuck
-31 verbose headers { date: 'Sun, 15 Feb 2015 12:16:41 GMT',
+31 verbose headers { date: 'Sun, 15 Feb 2015 12:17:51 GMT',
 31 verbose headers   server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
 31 verbose headers   'content-type': 'application/json',
 31 verbose headers   'cache-control': 'max-age=60',
-31 verbose headers   'content-length': '2750',
+31 verbose headers   'content-length': '1438',
 31 verbose headers   'accept-ranges': 'bytes',
 31 verbose headers   via: '1.1 varnish',
-31 verbose headers   'x-served-by': 'cache-fra1223-FRA',
+31 verbose headers   'x-served-by': 'cache-fra1230-FRA',
 31 verbose headers   'x-cache': 'MISS',
 31 verbose headers   'x-cache-hits': '0',
-31 verbose headers   'x-timer': 'S1424002600.479651,VS0,VE814',
+31 verbose headers   'x-timer': 'S1424002670.958114,VS0,VE186',
 31 verbose headers   'keep-alive': 'timeout=10, max=50',
 31 verbose headers   connection: 'Keep-Alive' }
 32 verbose request invalidating /Users/umayr/.npm/registry.npmjs.org/fuck on PUT
 33 error publish Failed PUT 403
-34 verbose stack Error: forbidden cannot modify pre-existing version: 0.0.0
-34 verbose stack old={"name":"fuck","version":"0.0.0","description":"ERROR: No README.md file found!","main":"index.js","scripts":{"test":"echo \"Error: no test specified\" && exit 1"},"repository":"","author":"","license":"BSD","readme":"stopwordz","readmeFilename":"README.md","_id":"fuck@0.0.0","dist":{"shasum":"319312c7cc6957d13dee60f3c7625bfe4b96f625","tarball":"http://registry.npmjs.org/fuck/-/fuck-0.0.0.tgz"},"_from":".","_npmVersion":"1.2.18","_npmUser":{"name":"stephenhandley","email":"stephen.handley@gmail.com"},"maintainers":[{"name":"stephenhandley","email":"stephen.handley@gmail.com"}]}
-34 verbose stack new={"name":"fuck","version":"0.0.0","description":"Keeps track of the number of fucks given while coding anything.","private":false,"bin":{"fuck":"./bin/fuck"},"scripts":{"test":"mocha -R spec"},"author":{"name":"Umayr Shahid","email":"umayrr@hotmail.co.uk","url":"http://umayrshahid.com"},"repository":{"type":"git","url":"https://github.com/umayr/fuck"},"license":"MIT","bugs":{"url":"https://github.com/umayr/fuck/issues"},"dependencies":{"commander":"~2.0.0","jsonfile":"^2.0.0"},"devDependencies":{},"readme":"Fuck.\u000a=============\u000a\u000a## Description\u000a\u000aKeeps track of the number of fucks given while doing... well, anything.\u000a\u000a## Usage\u000a\u000aTo install fuck from npm, run:\u000a\u000a```\u000a$ npm install -g fuck\u000a```\u000a\u000a```\u000a$ fuck --help\u000a\u000aUsage: fuck [options]\u000a\u000a  Options:\u000a\u000a    -h, --help     output usage information\u000a    -V, --version  output the version number\u000a    -r, --reset    resets fucks\u000a    -c, --count    total fucks given\u000a    -l, --list     lists all fucks given yet\u000a\u000a```\u000a\u000a\u000a![Fuck example!](http://i.imgur.com/W7ODQjo.png)\u000a\u000a\u000a## License\u000a\u000aCopyright (c) 2015 Umayr Shahid\u000a\u000a[MIT License](http://en.wikipedia.org/wiki/MIT_License)\u000a\u000a","readmeFilename":"Readme.md","gitHead":"14b7ec978c1eff0628542fb544ddeee58cb442f6","homepage":"https://github.com/umayr/fuck","_id":"fuck@0.0.0","_shasum":"f58398549cd16dc2dd940d43fc41ea57078cec01","_from":".","_npmVersion":"2.5.1","_nodeVersion":"0.12.0","_npmUser":{"name":"umayr","email":"umayrr@hotmail.co.uk"},"maintainers":[{"name":"umayr","email":"umayrr@hotmail.co.uk"}],"dist":{"shasum":"f58398549cd16dc2dd940d43fc41ea57078cec01","tarball":"http://registry.npmjs.org/fuck/-/fuck-0.0.0.tgz"}}: fuck
+34 verbose stack Error: forbidden user: umayr not authorized to modify fuck
+34 verbose stack Changed: description "ERROR: No README.md file found!" -> "Keeps track of the number of fucks given while coding anything."
+34 verbose stack Changed: dist-tags.latest "0.0.0" -> "0.0.1"
+34 verbose stack Added: versions.0.0.1
+34 verbose stack Changed: readme "stopwordz" -> "Fuck.\u000a=============\u000a\u000a## Description\u000a\u000aKeeps track of the number of fucks given while doing... well, anything.\u000a\u000a## Usage\u000a\u000aTo install fuck from npm, run:\u000a\u000a```\u000a$ npm install -g fuck\u000a```\u000a\u000a```\u000a$ fuck --help\u000a\u000aUsage: fuck [options]\u000a\u000a  Options:\u000a\u000a    -h, --help     output usage information\u000a    -V, --version  output the version number\u000a    -r, --reset    resets fucks\u000a    -c, --count    total fucks given\u000a    -l, --list     lists all fucks given yet\u000a\u000a```\u000a\u000a\u000a![Fuck example!](http://i.imgur.com/W7ODQjo.png)\u000a\u000a\u000a## License\u000a\u000aCopyright (c) 2015 Umayr Shahid\u000a\u000a[MIT License](http://en.wikipedia.org/wiki/MIT_License)\u000a\u000a"
+34 verbose stack Changed: time.modified "2013-09-20T23:25:20.242Z" -> "2015-02-15T12:21:34.427Z"
+34 verbose stack Added: time.0.0.1
+34 verbose stack Changed: readmeFilename "README.md" -> "Readme.md"
+34 verbose stack Changed: license "BSD" -> "MIT"
+34 verbose stack Added: homepage
+34 verbose stack Added: repository
+34 verbose stack Added: author
+34 verbose stack Added: bugs
+34 verbose stack Added: _attachments: fuck
 34 verbose stack     at CachingRegistryClient.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:254:14)
 34 verbose stack     at Request._callback (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:178:14)
 34 verbose stack     at Request.self.callback (/usr/local/lib/node_modules/npm/node_modules/request/request.js:344:22)
@@ -92,9 +103,20 @@
 40 error node v0.12.0
 41 error npm  v2.5.1
 42 error code E403
-43 error forbidden cannot modify pre-existing version: 0.0.0
-43 error old={"name":"fuck","version":"0.0.0","description":"ERROR: No README.md file found!","main":"index.js","scripts":{"test":"echo \"Error: no test specified\" && exit 1"},"repository":"","author":"","license":"BSD","readme":"stopwordz","readmeFilename":"README.md","_id":"fuck@0.0.0","dist":{"shasum":"319312c7cc6957d13dee60f3c7625bfe4b96f625","tarball":"http://registry.npmjs.org/fuck/-/fuck-0.0.0.tgz"},"_from":".","_npmVersion":"1.2.18","_npmUser":{"name":"stephenhandley","email":"stephen.handley@gmail.com"},"maintainers":[{"name":"stephenhandley","email":"stephen.handley@gmail.com"}]}
-43 error new={"name":"fuck","version":"0.0.0","description":"Keeps track of the number of fucks given while coding anything.","private":false,"bin":{"fuck":"./bin/fuck"},"scripts":{"test":"mocha -R spec"},"author":{"name":"Umayr Shahid","email":"umayrr@hotmail.co.uk","url":"http://umayrshahid.com"},"repository":{"type":"git","url":"https://github.com/umayr/fuck"},"license":"MIT","bugs":{"url":"https://github.com/umayr/fuck/issues"},"dependencies":{"commander":"~2.0.0","jsonfile":"^2.0.0"},"devDependencies":{},"readme":"Fuck.\u000a=============\u000a\u000a## Description\u000a\u000aKeeps track of the number of fucks given while doing... well, anything.\u000a\u000a## Usage\u000a\u000aTo install fuck from npm, run:\u000a\u000a```\u000a$ npm install -g fuck\u000a```\u000a\u000a```\u000a$ fuck --help\u000a\u000aUsage: fuck [options]\u000a\u000a  Options:\u000a\u000a    -h, --help     output usage information\u000a    -V, --version  output the version number\u000a    -r, --reset    resets fucks\u000a    -c, --count    total fucks given\u000a    -l, --list     lists all fucks given yet\u000a\u000a```\u000a\u000a\u000a![Fuck example!](http://i.imgur.com/W7ODQjo.png)\u000a\u000a\u000a## License\u000a\u000aCopyright (c) 2015 Umayr Shahid\u000a\u000a[MIT License](http://en.wikipedia.org/wiki/MIT_License)\u000a\u000a","readmeFilename":"Readme.md","gitHead":"14b7ec978c1eff0628542fb544ddeee58cb442f6","homepage":"https://github.com/umayr/fuck","_id":"fuck@0.0.0","_shasum":"f58398549cd16dc2dd940d43fc41ea57078cec01","_from":".","_npmVersion":"2.5.1","_nodeVersion":"0.12.0","_npmUser":{"name":"umayr","email":"umayrr@hotmail.co.uk"},"maintainers":[{"name":"umayr","email":"umayrr@hotmail.co.uk"}],"dist":{"shasum":"f58398549cd16dc2dd940d43fc41ea57078cec01","tarball":"http://registry.npmjs.org/fuck/-/fuck-0.0.0.tgz"}}: fuck
+43 error forbidden user: umayr not authorized to modify fuck
+43 error Changed: description "ERROR: No README.md file found!" -> "Keeps track of the number of fucks given while coding anything."
+43 error Changed: dist-tags.latest "0.0.0" -> "0.0.1"
+43 error Added: versions.0.0.1
+43 error Changed: readme "stopwordz" -> "Fuck.\u000a=============\u000a\u000a## Description\u000a\u000aKeeps track of the number of fucks given while doing... well, anything.\u000a\u000a## Usage\u000a\u000aTo install fuck from npm, run:\u000a\u000a```\u000a$ npm install -g fuck\u000a```\u000a\u000a```\u000a$ fuck --help\u000a\u000aUsage: fuck [options]\u000a\u000a  Options:\u000a\u000a    -h, --help     output usage information\u000a    -V, --version  output the version number\u000a    -r, --reset    resets fucks\u000a    -c, --count    total fucks given\u000a    -l, --list     lists all fucks given yet\u000a\u000a```\u000a\u000a\u000a![Fuck example!](http://i.imgur.com/W7ODQjo.png)\u000a\u000a\u000a## License\u000a\u000aCopyright (c) 2015 Umayr Shahid\u000a\u000a[MIT License](http://en.wikipedia.org/wiki/MIT_License)\u000a\u000a"
+43 error Changed: time.modified "2013-09-20T23:25:20.242Z" -> "2015-02-15T12:21:34.427Z"
+43 error Added: time.0.0.1
+43 error Changed: readmeFilename "README.md" -> "Readme.md"
+43 error Changed: license "BSD" -> "MIT"
+43 error Added: homepage
+43 error Added: repository
+43 error Added: author
+43 error Added: bugs
+43 error Added: _attachments: fuck
 44 error If you need help, you may report this error at:
 44 error     <http://github.com/npm/npm/issues>
 45 verbose exit [ 1, true ]
