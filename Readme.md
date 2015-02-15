@@ -10,7 +10,7 @@ Keeps track of the number of fucks given while doing... well, anything.
 To install fuck from npm, run:
 
 ```
-$ npm install -g fuck
+$ npm install -g fucks
 ```
 
 ```
