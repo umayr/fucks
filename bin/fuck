@@ -6,7 +6,7 @@ var jf = require('jsonfile');
 var constants = require('../utils/constants');
 
 program
-    .version('0.0.0')
+    .version('0.0.1')
     .option('-r, --reset', 'resets fucks')
     .option('-c, --count', 'total fucks given')
     .option('-l, --list', 'lists all fucks given yet');

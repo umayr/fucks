@@ -1,8 +1,8 @@
 {
   "name": "fuck",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Keeps track of the number of fucks given while coding anything.",
-  "private": true,
+  "private": false,
   "bin": {
     "fuck": "./bin/fuck"
   },
