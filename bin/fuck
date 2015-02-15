@@ -33,18 +33,22 @@ if (program.args.length < 1) {
     }
 
     if (program.count) {
-        console.log('you have given ' + fucks.length + ' fucks!');
+        var word = fucks.length === 1 ? 'fuck' : 'fucks';
+        console.log('you have given ' + fucks.length + ' ' + word +'!');
     }
 
     if (program.list) {
         if(fucks.length > 0){
-            console.log('----------------------------------------');
-            console.log('|                 fucks                |');
-            console.log('----------------------------------------');
+            console.log('\n\n\t\tAll given fucks!');
+            console.log('------------------------------------------------\n');
+
 
             for(var i = 0; i < fucks.length; i++){
-                console.log(new Date(fucks[i].time));
+                console.log('    ' +  (i+1) + '. Fuck given at ' + (new Date(fucks[i].time)).toTimeString());
             }
+        }
+        else{
+            console.log('not a single fuck given today!')
         }
 
     }
