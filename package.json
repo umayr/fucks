@@ -21,7 +21,6 @@
   "license": "MIT",
   "bugs": "https://github.com/umayr/fuck/issues",
   "dependencies": {
-    "autocmdr": "~0.0.4",
     "commander": "~2.0.0",
     "jsonfile": "^2.0.0"
   },
