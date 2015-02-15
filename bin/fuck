@@ -48,7 +48,7 @@ if (program.args.length < 1) {
             }
         }
         else{
-            console.log('not a single fuck given today!')
+            console.log('not a single fuck was given, today!')
         }
 
     }
