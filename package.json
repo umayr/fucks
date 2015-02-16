@@ -1,6 +1,6 @@
 {
   "name": "fucks",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Keeps track of the number of fucks given while coding anything.",
   "private": false,
   "bin": {
