@@ -6,7 +6,7 @@ var jf = require('jsonfile');
 var constants = require('../utils/constants');
 
 program
-    .version('0.0.1')
+    .version('0.0.2')
     .option('-r, --reset', 'resets fucks')
     .option('-c, --count', 'total fucks given')
     .option('-l, --list', 'lists all fucks given yet');
@@ -24,11 +24,11 @@ program
 
 if (program.args.length < 1) {
 
-    var json = jf.readFileSync(constants.file);
+    var json = jf.readFileSync(constants.file());
     var fucks = json['fucks'];
 
     if (program.reset) {
-        jf.writeFileSync(constants.file, JSON.parse(constants.raw));
+        jf.writeFileSync(constants.file(), JSON.parse(constants.raw));
         console.log('all fucks have been reset.');
     }
 
@@ -56,7 +56,7 @@ if (program.args.length < 1) {
     if (!program.reset && !program.count && !program.list) {
 
         fucks.push({time: Date.now()});
-        jf.writeFileSync(constants.file, json);
+        jf.writeFileSync(constants.file(), json);
 
     }
 
